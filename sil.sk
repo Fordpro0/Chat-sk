@@ -1,0 +1,25 @@
+# by FordproFarm
+command /sil [<text>]:
+    permission: rehber.komut
+    permission message: &cBu komutu kullanmak için yetkin yok!
+    trigger:
+        loop 300 times:
+            send "" to all players
+        send "<##37FF00>✔ Sohbet %player% tarafından temizlendi!" to all players
+
+
+on chat:
+    if message is "sa":
+        set message to "Selam Aleyküm"
+    if message is "as":
+        set message to "Aleyküm Selam"
+    if message is "mrb":
+        set message to "Merhaba"
+    if message is "slm":
+        set message to "Selam"
+    if message is "hb":
+        set message to "Hoşbulduk"
+    if message is "hg":
+        set message to "Hoşgeldin"
+    if message is "tşk":
+        set message to "Teşekkürler"
